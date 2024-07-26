@@ -5,8 +5,8 @@ All URIs are relative to *https://nfs.de-fra.ionos.com*
 |Method | HTTP request | Description|
 |------------- | ------------- | -------------|
 |[**ClustersSharesDelete**](SharesApi.md#ClustersSharesDelete) | **Delete** /clusters/{clusterId}/shares/{shareId} | Delete Share|
-|[**ClustersSharesFindById**](SharesApi.md#ClustersSharesFindById) | **Get** /clusters/{clusterId}/shares/{shareId} | Retrieves a share|
-|[**ClustersSharesGet**](SharesApi.md#ClustersSharesGet) | **Get** /clusters/{clusterId}/shares | Retrieves all shares|
+|[**ClustersSharesFindById**](SharesApi.md#ClustersSharesFindById) | **Get** /clusters/{clusterId}/shares/{shareId} | Retrieve Share|
+|[**ClustersSharesGet**](SharesApi.md#ClustersSharesGet) | **Get** /clusters/{clusterId}/shares | Retrieve Shares|
 |[**ClustersSharesPost**](SharesApi.md#ClustersSharesPost) | **Post** /clusters/{clusterId}/shares | Create Share|
 |[**ClustersSharesPut**](SharesApi.md#ClustersSharesPut) | **Put** /clusters/{clusterId}/shares/{shareId} | Ensure Share|
 
@@ -101,7 +101,7 @@ var result ShareRead = ClustersSharesFindById(ctx, clusterId, shareId)
                       .Execute()
 ```
 
-Retrieves a share
+Retrieve Share
 
 
 
@@ -187,7 +187,7 @@ var result ShareReadList = ClustersSharesGet(ctx, clusterId)
                       .Execute()
 ```
 
-Retrieves all shares
+Retrieve Shares
 
 
 
