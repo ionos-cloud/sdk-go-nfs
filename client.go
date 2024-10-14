@@ -51,7 +51,7 @@ const (
 	RequestStatusFailed  = "FAILED"
 	RequestStatusDone    = "DONE"
 
-	Version = "1.0.0"
+	Version = "1.1.0"
 )
 
 // APIClient manages communication with the IONOS Cloud - Network File Storage API API v0.1.1
