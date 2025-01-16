@@ -6,8 +6,8 @@
 |------------ | ------------- | ------------- | -------------|
 |**Name** | **string** | The directory being exported | |
 |**Quota** | Pointer to **int32** | The quota in MiB for the export. The quota can restrict the amount of data that can be stored within the export. The quota can be disabled using &#x60;0&#x60;.  | [optional] [default to 0]|
-|**Gid** | Pointer to **int32** | The group ID that will own the exported directory. If not set, **anonymous** (&#x60;512&#x60;) will be used.  | [optional] [default to 512]|
-|**Uid** | Pointer to **int32** | The user ID that will own the exported directory. If not set, **anonymous** (&#x60;512&#x60;) will be used.  | [optional] [default to 512]|
+|**Gid** | Pointer to **int32** | The group ID that will own the exported directory and be used as anongid in squash modes root-anonymous and all-anonymous.  | [optional] [default to 65534]|
+|**Uid** | Pointer to **int32** | The user ID that will own the exported directory and be used as anonuid in squash modes root-anonymous and all-anonymous.  | [optional] [default to 65534]|
 |**ClientGroups** | [**[]ShareClientGroups**](ShareClientGroups.md) | The groups of clients are the systems connecting to the Network File Storage cluster.  | |
 
 ## Methods

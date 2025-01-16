@@ -4,7 +4,7 @@
 
 |Name | Type | Description | Notes|
 |------------ | ------------- | ------------- | -------------|
-|**Squash** | Pointer to **string** | The squash mode for the export. The squash mode can be: * &#x60;none&#x60; - No squash mode. no mapping * &#x60;root-anonymous&#x60; - Map root user to anonymous uid. * &#x60;all-anonymous&#x60; - Map all users to anonymous uid.  | [optional] [default to "none"]|
+|**Squash** | Pointer to **string** | The squash mode for the export. The squash mode can be: * &#x60;none&#x60; - No squash mode. no mapping (no_all_squash,no_root_squash). * &#x60;root-anonymous&#x60; - Map root user to anonymous uid (root_squash,anonuid&#x3D;&lt;uid&gt;,anongid&#x3D;&lt;gid&gt;). * &#x60;all-anonymous&#x60; - Map all users to anonymous uid (all_squash,anonuid&#x3D;&lt;uid&gt;,anongid&#x3D;&lt;gid&gt;).  | [optional] [default to "none"]|
 
 ## Methods
 
